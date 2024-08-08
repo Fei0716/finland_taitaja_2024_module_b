@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Game House</title>
+    <link rel="shortcut icon" href="./logo/RGH%20logo-09.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--    header + nav-->
+<header>
+    <nav class="navbar" role="navigation">
+        <a href="/finland_module_b/"><img src="./logo/RGH%20logo-08.png" alt="Logo of the Retro Game House" class="navbar-brand"></a>
+        <button class="btn-primary">Login</button>
+    </nav>
+</header>
+
+<!--main content section-->
+<main role="main" class="mt-70">
+    <section aria-label="Game Details Section" id="section-game-detail" class="mb-3">
+        <div id="game-detail-wrapper">
+            <img src="./Gamesboxes-from-collection/nintendo-Switch/game_thumbnail.jpeg" alt="Game's Thumbnail Image">
+            <article id="game-detail">
+                <h1 id="game-name" class="main-heading mb-2 border-bottom border-bottom-dark"></h1>
+                <div id="game-infos">
+                        <div>Genre <img src="./icons/puzzle-svgrepo-com.svg">: <strong id="game-genre"></strong></div>
+                        <div>Launched Year <img src="./icons/game-console-arcade-svgrepo-com.svg ">: <strong id="game-launched_year"></strong></div>
+                        <div>Developer <img src="./icons/typewriter-svgrepo-com.svg">: <strong id="game-developer"></strong></div>
+
+                        <div>Platform <img src="./icons/gamepad-svgrepo-com.svg ">: <strong id="game-platform"></strong></div>
+                        <div>Publisher <img src="./icons/microphone-svgrepo-com.svg">: <strong id="game-publisher"></strong></div>
+                        <h2 class="sub-heading">Description <img src="./icons/vinyl-svgrepo-com.svg ">: <br> <strong id="game-description"></strong></h2>
+                </div>
+            </article>
+        </div>
+    </section>
+
+<!--rank section-->
+    <section aria-label="Game Ranks Section" id="section-rank" class="mb-5">
+        <div id="rank-wrapper">
+            <h2 class="text-center main-heading mb-1">Game Results</h2>
+            <div class="home-search mb-1">
+                <label for="search-game">
+                    Search for Players:
+                </label>
+                <input type="search" name="search-game" id="search-game" class="form-control" placeholder="Type in the username...">
+            </div>
+            <table id="table-rank">
+
+            </table>
+            <!--        confetti effect-->
+
+            <canvas id="canvas-confetti">
+
+            </canvas>
+        </div>
+
+        </div>
+    </section>
+</main>
+
+<!--footer-->
+<footer role="contentinfo" >
+    <div id="footer-wrapper">
+        <div id="copyright">
+            <img src="./logo/RGH%20logo-08.png" alt="Logo of the Retro Game House">
+            <div>@Taitaja2024, All Right reserved;</div>
+        </div>
+
+        <div id="competitor-info">
+            <div>Created By:</div>
+            <strong>Fei</strong>
+            <strong>UTeM</strong>
+        </div>
+    </div>
+</footer>
+<script src="game.js"></script>
+</body>
+</html>
